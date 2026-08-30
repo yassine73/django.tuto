@@ -29,6 +29,6 @@ python manage.py migrate
 ## 4. N.B
 
 the files below are required to understand:
-**manage.py** used to interact with django<br>
-**settings.py** the core of django wich include all necessary things like authentications, templates, databases ...<br>
-**urls** which tells django which pages urls should use and where.<br>
+**manage.py** used to interact with django\
+**settings.py** the core of django wich include all necessary things like authentications, templates, databases ...\
+**urls** which tells django which pages urls should use and where.\
