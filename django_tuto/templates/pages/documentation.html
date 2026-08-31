@@ -1,0 +1,13 @@
+{% block content %}
+<h1>We are using dtl (django template language)</h1>
+<h3>Hi, This is {{ page }}!</h3>
+<h2>Filters:</h2>
+<ol>
+  <li><b>This is default filter: {{ text|default:'DefaultValueHere' }}</b></li>
+  <li><b>This is slice filter: {{ test|slice:'7:20' }}</b></li>
+  <li><b>This is length filter: {{ test|length }}</b></li>
+  <li><b>This is add filter: {{ test|add:' i just added this'}}</b></li>
+  <li><b>This is cut filter: {{ test|cut:' '}}</b></li>
+  <li><b>This is filesizeformat filter: {{ filesize|filesizeformat}}</b></li>
+</ol>
+{% endblock content %}

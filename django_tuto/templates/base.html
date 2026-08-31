@@ -1,0 +1,30 @@
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+</style>
+
+<!-- include tag -->
+{% include "parts/navbar.html" %}
+
+<!-- block tag -->
+{% block content %}
+{% endblock content %}
+
+<!-- if tag -->
+{% if page == 'index' %}
+<b>Is Index? Yes...</b>
+{% elif page == 'about' %}
+<b>Is Index? No...</b>
+{% else %}
+<b>Something Happened...</b>
+{% endif %}
+
+<!-- for loop tag -->
+{% for letter in page %}
+<p>{{letter}}</p>
+{% endfor %}
+
+<!-- include tag -->
+{% include "parts/footer.html" %}
