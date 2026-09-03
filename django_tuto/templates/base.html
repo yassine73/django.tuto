@@ -1,9 +1,5 @@
-<style>
-  body {
-    background-color: black;
-    color: white;
-  }
-</style>
+<!-- {% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
 
 <!-- include tag -->
 {% include "parts/navbar.html" %}
@@ -13,13 +9,13 @@
 {% endblock content %}
 
 <!-- if tag -->
-{% if page == 'index' %}
+<!-- {% if page == 'index' %}
 <b>Is Index? Yes...</b>
 {% elif page == 'about' %}
 <b>Is Index? No...</b>
 {% else %}
 <b>Something Happened...</b>
-{% endif %}
+{% endif %} -->
 
 <!-- for loop tag -->
 {% for letter in page %}
