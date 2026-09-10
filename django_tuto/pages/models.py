@@ -22,6 +22,9 @@ class Male(models.Model):
 ## A user can take one or more products
 class Product(models.Model):
     name = models.CharField(max_length=50, null=True)
+    price = models.DecimalField(max_digits=5, decimal_places=2, null=True)
+    content = models.TextField(max_length=5000, null=True)
+    image = models.ImageField(upload_to="photos/%y/%m/%d", null=True)
     def __str__(self):
             return self.name
 
